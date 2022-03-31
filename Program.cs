@@ -13,10 +13,13 @@
             string Email=Console.ReadLine();
             Console.WriteLine("Enter the Phone number :");
             string PhoneNumber = Console.ReadLine();
+            Console.WriteLine("Enter the Password :");
+            string PassWord=Console.ReadLine();
             userRegistration.Firstnamein(Firstname);
             userRegistration.Lastenamein(Lastname);
             userRegistration.Emails(Email);
             userRegistration.PhoneNumbers(PhoneNumber);
+            userRegistration.PassWords(PassWord);
         }
     }
 }
