@@ -4,10 +4,13 @@
     {
         static void Main(string[]args)
         {
-            UserRegistration patten = new UserRegistration();
+            UserRegistration userRegistration = new UserRegistration();
             Console.WriteLine("Enter the First name :");
             string Firstname=Console.ReadLine();
-            patten.Firstnamein(Firstname);           
+            Console.WriteLine("Enter the Last name :");
+            string Lastname=Console.ReadLine();
+            userRegistration.Firstnamein(Firstname);
+            userRegistration.Lastenamein(Lastname);
         }
     }
 }
