@@ -4,7 +4,7 @@
     {
         static void Main(string[]args)
         {
-            Patten patten = new Patten();
+            UserRegistration patten = new UserRegistration();
             Console.WriteLine("Enter the First name :");
             string Firstname=Console.ReadLine();
             patten.Firstnamein(Firstname);           

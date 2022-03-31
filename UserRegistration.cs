@@ -7,19 +7,20 @@ using System.Threading.Tasks;
 
 namespace patten
 {
-    class Patten
+    internal class UserRegistration
     {
-        public Regex FirstNames = new Regex(@"^[A-z][A-Za-z]{3,}$");
-         public void Firstnamein(string Firstname)
+        public Regex FirstNames = new Regex(@"^[A-Z][A-Za-z]{3,}$");
+        public void Firstnamein(string Firstname)
         {
-            Console.WriteLine("First name :"+Firstname);
+            Console.WriteLine("First name :" + Firstname);
             if (FirstNames.IsMatch(Firstname))
             {
                 Console.WriteLine(" Valid name..");
-            }else
+            }
+            else
             {
                 Console.WriteLine("invalid name...");
             }
-        }        
+        }
     }
 }
