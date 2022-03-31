@@ -13,7 +13,7 @@ namespace patten
         public Regex LastNames = new Regex(@"^[A-z][A-Za-z]{3,}$");
         public Regex EmailReg = new Regex(@"^[a-z](.[a-z])+@[a-z]+.[a-z](.[a-z])$");
         public Regex PhoneNumberReg = new Regex(@"^[0-9]{2}\s[0-9]{10}$");
-        public Regex PassWordReg = new Regex(@"^[A-z]{1,}[A-Za-z]{8,}$");
+        public Regex PassWordReg = new Regex(@"^[A-Z][0-9][A-Za-z]{8,}$");
 
         public void Firstnamein(string Firstname)
         {
