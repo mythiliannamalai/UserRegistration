@@ -14,7 +14,7 @@ namespace patten
         public Regex EmailReg = new Regex(@"^[a-z](.[a-z])+@[a-z]+.[a-z]{3}(.[a-z]{2})$");
         public Regex PhoneNumberReg = new Regex(@"^[0-9]{2}\s[0-9]{10}$");
         public Regex PassWordReg = new Regex(@"^[A-Z]@[0-9][A-Za-z]{8,}$");
-
+        public Regex AllEmailReg = new Regex(@"^[a-z]((.-+){1})([0-9]{3})+@([0-9]{1})([a-z]{,5})+.[a-z]{3}(.[a-z]{2,})$");
         public void Firstnamein(string Firstname)
         {
             Console.WriteLine("First name :" + Firstname);
@@ -49,11 +49,19 @@ namespace patten
         }
         public void PassWords(string PassWord)
         {
-            Console.WriteLine("Email id :" + PassWord);
+            Console.WriteLine("Password :" + PassWord);
             if (PassWordReg.IsMatch(PassWord))
                 Console.WriteLine(" Valid Password..");
             else
                 Console.WriteLine("invalid Password...");
+        }
+        public void AllEmails(string AllEmail)
+        {
+            Console.WriteLine("All patten Email id :" + AllEmail);
+            if (AllEmailReg.IsMatch(AllEmail))
+                Console.WriteLine(" Valid Emali patten..");
+            else
+                Console.WriteLine("invalid Email patten...");
         }
     }
 }
